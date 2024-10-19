@@ -7,8 +7,8 @@ const Product = ({item}) =>{
         <div className="products">
             <ul>
                 <li> the item is : {item.title}</li>
-                <li></li>
-                <li></li>
+                <li>${item.price}</li>
+                <li>{item.description}</li>
                 <image></image>
             </ul>
         </div>

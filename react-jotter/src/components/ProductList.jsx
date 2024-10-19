@@ -1,6 +1,6 @@
 import Product from './Product';
 
-const ProductList = ({listItem}) => {
+const ProductList = ({listItem, filteredList}) => {
 return(
     <div> 
          {listItem.map(item => <Product item={item} /> )}
