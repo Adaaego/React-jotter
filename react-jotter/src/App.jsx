@@ -38,12 +38,18 @@ function App() {
         console.log(filtered);
       };
 
+      const resetHandler = () =>  {
+        setFilteredList(listItem);
+        setIsFiltered(false);
+      }
+
       
  
      return(
 
     <div className='App'>
       <button onClick={filterHandler}> filter here</button>
+      <button onClick={resetHandler}> Reset here</button>
      <ProductList listItem={isFiltered ? filteredList : listItem}/>
     </div>
 
